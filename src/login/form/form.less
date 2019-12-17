@@ -1,0 +1,157 @@
+.form-login {
+  position: relative;
+  transition: all 1s;
+  &.joke{
+    transform: rotate(180deg) scaleX(-1);
+
+  }
+  &__error {
+    background: rgba(209, 25, 62, 0.35);
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    top: -52px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    display: none;
+    padding: 12px;
+    min-height: 40px;
+  }
+
+  &__ico-error {
+    background: url(../../img/_error.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 12px;
+    order: 0;
+    flex-basis: 20px;
+    @media @mobile {
+      margin-left: 10px;
+    }
+  }
+
+}
+
+.form {
+  position: relative;
+
+  &__head {
+    color: @color-white;
+    font-size: 22px;
+    text-align: center;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+
+  &__row {
+    padding-bottom: 36px;
+
+    &:last-child {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+  }
+
+}
+
+.form-row {
+  position: relative;
+
+  &__label {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 8px;
+  }
+
+  &__error{
+    color: red;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 20px;
+    font-size: 12px;
+    display:none;
+  }
+  &__input {
+    background: @bg-input;
+    color: @color-primary;
+    outline: none;
+    width: 100%;
+    height: 48px;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid @bg-input;
+    position: relative;
+    transition: all .5s;
+
+    /*&:invalid{
+      border-color:red;
+      &+.form-row__error{
+        display: block;
+      }
+    }*/
+
+    &:focus {
+      border: 1px solid #D3DBE0;
+    }
+
+    &--submit {
+      color: #fff;
+      background: @bg-submit;
+      text-transform: uppercase;
+      cursor: pointer;
+      z-index: 1;
+      font-size: 18px;
+      &:disabled{
+        background: rgba(255, 153, 0, 0.25);
+        cursor: default;
+        &:hover:before{
+          background: rgba(255, 153, 0, 0.25);
+        }
+      }
+      &:focus{
+        border:none;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0px;
+        border-radius: 3px;
+        height: 100%;
+        background: #f77118;
+        transition: all .5s;
+        z-index: -1;
+      }
+
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__switch-password {
+    width: 24px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    background: url(../../img/view-off.svg) no-repeat;
+    opacity: 0.5;
+    right: 14px;
+    top: 36px;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

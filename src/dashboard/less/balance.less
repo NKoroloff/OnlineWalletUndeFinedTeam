@@ -1,0 +1,25 @@
+.balance-history{
+  &__head{
+    margin-bottom: 8px;
+    color:@color-dropdown;
+    font-size: 16px;
+  }
+  &.balance-history--empty{
+    .balance-history__graph{
+      background:url(../../img/empty-balance-history.svg) #142836 no-repeat;
+      width:100%;
+      background-size: cover;
+
+    }
+  }
+  &__graph{
+    width: 100%;
+    position: relative;
+    height: 256px;
+    background: #142836;
+    border-radius: 6px;
+  }
+  &__transactions{
+    margin-top:32px;
+  }
+}

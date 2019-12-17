@@ -1,0 +1,28 @@
+@import "../../dashboard/less/main";
+@import "./send";
+@import "./receive";
+
+.wallet-operations{
+  display:flex;
+  flex-wrap: wrap;
+  &__box{
+    width: 45%;
+    flex: 1 1 auto;
+    @media @tablet{
+      width:100%;
+    }
+    @media @mobile{
+      width:100%;
+    }
+    &:first-child{
+      margin-right: 40px;
+      @media @tablet{
+        margin-right: 0px;
+      }
+      @media @mobile{
+        margin-right: 0px;
+      }
+    }
+  }
+}
+

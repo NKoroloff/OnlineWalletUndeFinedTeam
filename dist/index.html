@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, nofollow" />
+    <meta name="author" content="undefined team" />
+    <meta name="copyright" lang="ru" content="DevEducation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Online wallet, crypto wallet , wallet , bitcoin wallet">
+    <meta name="description" content="Cryptocurrency exchange - We operate the worlds biggest bitcoin exchange and altcoin crypto exchange in the world by volume">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Online wallet authorization page </title>
+</head>
+<body>
+<div class="mobile-stub">
+    <div class="mobile-stub__info localizeable" id = "myMobileStub">
+        To fully use the application, we recommend downloading the application to your mobile device
+    </div>
+    <a href="#" class="mobile-stub__href localizeable" id = "myDownloadIOS">download for IOS</a>
+    <a href="#" class="mobile-stub__href localizeable" id = "myDownlosdAndroid">download for Android</a>
+    <div class="mobile-stub__close localizeable" id ="myClose">Close this message</div>
+</div>
+<div class="login-page">
+    <header class="login-page__header header-dropdown">
+        <div class=" header-dropdown__lang  dropdown-btn" id="langActive">
+            <div class="dropdown-btn__lang">English</div>
+            <span class="dropdown-btn__arrow"></span>
+        </div>
+        <nav class=" header-dropdown__menu menu-lang">
+            <div class="menu-lang__nav">Deutsch - German</div>
+            <div class="menu-lang__nav">polski - Polish</div>
+            <div class="menu-lang__nav menu-lang__nav--active" id="englishLang">English</div>
+            <div class="menu-lang__nav" id="russianLang">русский - Russian</div>
+            <div class="menu-lang__nav">ةيبرعلا - Arabic</div>
+            <div class="menu-lang__nav">español - Spanish</div>
+            <div class="menu-lang__nav">italiano - Italian</div>
+        </nav>
+    </header>
+    <div class="login-page__content content">
+        <div class="content__description description-login">
+            <div class="description-login__logo logo">
+                <img src="./assets/img/logo.svg"  class="logo__img" alt="Logo Online Wallet">
+                <h1 class="logo__h1"></h1>
+            </div>
+            <div class="description-login__description localizeable" id = "myDescriptionLogin">
+                For login you have to download the mobile app and be registered in.
+            </div>
+            <div class="description-login__info localizeable" id = "myAlreadyRegistered">If you have already registered please enter your data and click Log in button.</div>
+            <div class="description-login__downloads download-app" id="downloadAnchor">
+                <div class="download-app__box download-box">
+                    <div class="download-box__img">
+                        <a href="#">
+                            <img src="./assets/img/GooglePlay.svg" alt="Android market">
+                        </a>
+                    </div>
+                    <div class="download-box__qrcode localizeable" id="qrAndroid">Show QR-code</div>
+                </div>
+                <div class="download-app__box download-box">
+                    <div class="download-box__img">
+                        <a href="#">
+                            <img src="./assets/img/app-store.svg" alt="Android market">
+                        </a>
+                    </div>
+                    <div class="download-box__qrcode localizeable" id="qrIos">Show QR-code</div>
+                </div>
+            </div>
+        </div>
+        <div class="content__form form-login">
+            <div class="form-login__error">
+                <div class="form-login__ico-error"></div>
+                <div class="form-login__txt localizeable" id = "myError">The login, device name or password is not correct.</div>
+            </div>
+            <form class="form-login__form form">
+                <div class="form__head localizeable" id = "myLogIn">Log In</div>
+                <div class="form__row form-row">
+
+                    <div class="form-row__label localizeable" id = "loginField">Login</div>
+
+                    <input type="text" name="login" id="login" pattern="[A-Za-z0-9-_]{1,}" minlength="1" maxlength="20" class="form-row__input" required />
+
+                    <span class="form-row__error localizeable" id = "nameFieldError">The field can contain only latin characters, digits and symbols "- , _"</span>
+                </div>
+                <div class="form__row form-row">
+                    <div class="form-row__label localizeable" id = "deviceName">Device Name</div>
+                    <input type="text" name="device" id="device" pattern="[A-Za-z0-9]{1,}" minlength="1" maxlength="20" class="form-row__input" required />
+                    <span class="form-row__error localizeable" id = "loginFieldError">The field can contain only latin characters, digits and symbols "- , _"</span>
+                </div>
+                <div class="form__row form-row">
+                    <div class="form-row__label localizeable" id = "passwordField">Password</div>
+                    <input type="password" name="password" minlength="6"  maxlength="20" class="form-row__input" id="input-password" required />
+                    <span class="form-row__error localizeable" id = "passwordFieldError">The field must contain at least 6 characters</span>
+                    <span class="form-row__switch-password"></span>
+                </div>
+                <div class="form__row form-row">
+                    <button type="submit" name="submit" id="submit" class="form-row__input form-row__input--submit localizeable">log in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        <div class="box-shadow"></div>
+        <svg viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg" class="view-box">
+
+            <line x1="-1000" y1="-100" x2="1000" y2="-100"  class="line-svg"/>
+            <line x1="-1000" y1="-10" x2="1000" y2="-10"  class="line-svg"/>
+            <line x1="-1000" y1="-20" x2="1000" y2="-20"  class="line-svg"/>
+            <line x1="-1000" y1="-30" x2="1000" y2="-30"  class="line-svg"/>
+            <line x1="-1000" y1="-40" x2="1000" y2="-40"  class="line-svg"/>
+            <line x1="-1000" y1="-50" x2="1000" y2="-50"  class="line-svg"/>
+            <line x1="-1000" y1="-60" x2="1000" y2="-60"  class="line-svg"/>
+            <line x1="-1000" y1="-70" x2="1000" y2="-70"  class="line-svg"/>
+            <line x1="-1000" y1="-80" x2="1000" y2="-80"  class="line-svg"/>
+            <line x1="-1000" y1="-90" x2="1000" y2="-90"  class="line-svg"/>
+            <line x1="-1000" y1="0" x2="1000" y2="0"  class="line-svg"/>
+            <line x1="-1000" y1="10" x2="1000" y2="10"  class="line-svg"/>
+            <line x1="-1000" y1="20" x2="1000" y2="20"  class="line-svg"/>
+            <line x1="-1000" y1="30" x2="1000" y2="30"  class="line-svg"/>
+            <line x1="-1000" y1="40" x2="1000" y2="40"  class="line-svg"/>
+            <line x1="-1000" y1="50" x2="1000" y2="50"  class="line-svg"/>
+            <line x1="-1000" y1="60" x2="1000" y2="60"  class="line-svg"/>
+            <line x1="-1000" y1="70" x2="1000" y2="70"  class="line-svg"/>
+            <line x1="-1000" y1="80" x2="1000" y2="80"  class="line-svg"/>
+
+            <line x1="120" y1="0" x2="120" y2="240"  class="line-vertical" />
+            <line x1="100" y1="0" x2="20" y2="240"  class="line-vertical" />
+            <line x1="80" y1="0" x2="-80" y2="240"  class="line-vertical"/>
+            <line x1="60" y1="0" x2="-180" y2="240"  class="line-vertical"/>
+            <line x1="40" y1="0" x2="-280" y2="240"  class="line-vertical"/>
+            <line x1="20" y1="0" x2="-380" y2="240"  class="line-vertical"/>
+            <line x1="0" y1="0" x2="-480" y2="240"  class="line-vertical"/>
+            <line x1="-20" y1="0" x2="-580" y2="240"  class="line-vertical"/>
+            <line x1="-40" y1="0" x2="-680" y2="240"  class="line-vertical"/>
+            <line x1="-60" y1="0" x2="-780" y2="240"  class="line-vertical"/>
+            <line x1="-80" y1="0" x2="-880" y2="240"  class="line-vertical"/>
+            <line x1="-100" y1="0" x2="-980" y2="240"  class="line-vertical"/>
+            <line x1="-120" y1="0" x2="-1080" y2="240"  class="line-vertical"/>
+            <line x1="-140" y1="0" x2="-1180" y2="240"  class="line-vertical"/>
+            <line x1="-160" y1="0" x2="-1280" y2="240"  class="line-vertical"/>
+            <line x1="-180" y1="0" x2="-1380" y2="240"  class="line-vertical"/>
+            <line x1="-200" y1="0" x2="-1480" y2="240"  class="line-vertical"/>
+            <line x1="-220" y1="0" x2="-1580" y2="240"  class="line-vertical"/>
+            <line x1="-240" y1="0" x2="-1680" y2="240"  class="line-vertical"/>
+            <line x1="-260" y1="0" x2="-1780" y2="240"  class="line-vertical"/>
+            <line x1="-280" y1="0" x2="-1880" y2="240"  class="line-vertical"/>
+            <line x1="-300" y1="0" x2="-1980" y2="240"  class="line-vertical"/>
+            <line x1="-320" y1="0" x2="-2080" y2="240"  class="line-vertical"/>
+
+            <line x1="140" y1="0" x2="220" y2="240"  class="line-vertical"/>
+            <line x1="160" y1="0" x2="320" y2="240"  class="line-vertical"/>
+            <line x1="180" y1="0" x2="420" y2="240"  class="line-vertical"/>
+            <line x1="200" y1="0" x2="520" y2="240"  class="line-vertical"/>
+            <line x1="220" y1="0" x2="620" y2="240"  class="line-vertical"/>
+            <line x1="240" y1="0" x2="720" y2="240"  class="line-vertical"/>
+            <line x1="260" y1="0" x2="820" y2="240"  class="line-vertical"/>
+            <line x1="280" y1="0" x2="920" y2="240"  class="line-vertical"/>
+            <line x1="300" y1="0" x2="1020" y2="240"  class="line-vertical"/>
+            <line x1="320" y1="0" x2="1120" y2="240"  class="line-vertical"/>
+            <line x1="340" y1="0" x2="1220" y2="240"  class="line-vertical"/>
+            <line x1="360" y1="0" x2="1320" y2="240"  class="line-vertical"/>
+            <line x1="380" y1="0" x2="1420" y2="240"  class="line-vertical"/>
+            <line x1="400" y1="0" x2="1520" y2="240"  class="line-vertical"/>
+            <line x1="420" y1="0" x2="1620" y2="240"  class="line-vertical"/>
+            <line x1="440" y1="0" x2="1720" y2="240"  class="line-vertical"/>
+            <line x1="460" y1="0" x2="1820" y2="240"  class="line-vertical"/>
+            <line x1="480" y1="0" x2="1920" y2="240"  class="line-vertical"/>
+            <line x1="500" y1="0" x2="2020" y2="240"  class="line-vertical"/>
+            <line x1="520" y1="0" x2="2120" y2="240"  class="line-vertical"/>
+
+        </svg>
+
+<!--    <div class="login-page__bottom-bg1">-->
+
+<!--    </div>-->
+    <div class="overlay" id="overlay"></div>
+    <div class="overlay-verification" id="overlayVerification"></div>
+    <div class="modal" id="modal">
+        <div class="modal__close"></div>
+        <div class="modal__img">
+            <img src="./assets/img/qr.svg" alt="modal android">
+        </div>
+        <div class="modal__txt localizeable" id = "myQRPlay">Scan the QR code to go to Play Market</div>
+    </div>
+    <div class="modal" id="modalIos">
+        <div class="modal__close" id="close-ios"></div>
+        <div class="modal__img">
+            <img src="./assets/img/qr-apple.svg" alt="modal android">
+        </div>
+        <div class="modal__txt localizeable" id = "myQRApp">Scan the QR code to go to App Store</div>
+    </div>
+    <div class="modal modal--error" id="modalError">
+        <div class="modal__error modal-error">
+            <div class="modal-error__img picture">
+                <img src="./assets/img/error_popup.svg" alt="Картинка не работает" class="picture__error">
+            </div>
+            <div class="modal-error__message localizeable" id = "myVerificationError">
+                Verification code entered incorrectly</div>
+            <button class="modal-error__close modal-error__close--opacity localizeable" id = "myOk">Ok, I got It!</button>
+        </div>
+    </div>
+    <div class="modal modal--verification" id="modalVerification">
+        <div class="modal__verification modal-verification">
+            <div class="modal-verification__message localizeable" id = "myVerification">Enter verification code</div>
+            <div class="modal-verification__comment localizeable" id = "myDigitCode">Please enter the 6 digit code we just sent to your number +XXXXXXXX653</div>
+            <form class="modal-verification__form form">
+                <div class="form__label localizeable" id = "myCode">Code</div>
+                <input type="text" class="form__input" name="authcode" id="twoFactorInput">
+                <button class="modal-verification__submit modal-verification__submit--opacity" id="submitVerification">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

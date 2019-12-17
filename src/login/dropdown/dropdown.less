@@ -1,0 +1,97 @@
+
+
+.header-dropdown {
+  height: 32px;
+  width: 128px;
+  position: relative;
+
+  &__lang {
+    background: @bg-dropdown;
+    height: 30px;
+    width: 128px;
+    border-radius: 3px;
+    display: flex;
+    padding-left: 9px;
+    cursor: pointer;
+    align-items: center;
+    transition: .5s;
+    outline: none;
+
+    &.active {
+      color: @color-white;
+    }
+
+    &.active .dropdown-btn__arrow {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__menu {
+    visibility: hidden;
+    position: absolute;
+    top:-400px;
+    background: @bg-dropdown;
+    width: 100%;
+    left: 0px;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 15px;
+    opacity:0;
+    transition:all 0.5s;
+    z-index:-1;
+    &.active {
+      top: 36px;
+      opacity:1;
+      visibility: visible;
+      z-index:5;
+    }
+  }
+
+}
+
+.dropdown-btn {
+
+  &__arrow {
+    background: url('../../img/arrow-open.svg') no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    display: block;
+    transition: all 0.4s;
+    margin-left: auto;
+    margin-right: 4px;
+  }
+
+}
+
+.menu-lang {
+
+  &__nav {
+    height: 34px;
+    line-height: 36px;
+    padding-left: 9px;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #79838A;
+
+    &:first-child {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+
+    &:hover {
+      color: @color-white;
+      background: @bg-input;
+    }
+
+    &--active {
+      color: #FF9900;
+    }
+  }
+
+}

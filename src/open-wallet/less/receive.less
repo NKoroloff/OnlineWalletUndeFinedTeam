@@ -1,0 +1,100 @@
+.receive-operation{
+  &__head{
+    color: #79838A;
+    margin-bottom: 8px;
+  }
+}
+
+.receive-box{
+  background: #142836;
+  border-radius: 3px;
+  padding:16px 20px 14px 20px;
+  min-height: 288px;
+  display: flex;
+  flex-direction: column;
+  @media @adaptive{
+    min-height: 304px;
+  }
+  @media @tablet{
+    min-height: 288px;
+  }
+  &__row{
+    margin-bottom: 16px;
+  }
+  &__head{
+    color: #79838A;
+    margin-bottom: 8px;
+  }
+  &__address{
+    font-size: 16px;
+    line-height: 18px;
+    overflow-wrap: break-word;
+    margin-bottom: 16px;
+  }
+  &__help{
+    margin-bottom: 16px;
+  }
+  &__submit{
+    margin-top: auto;
+  }
+}
+
+.help-box{
+  display:flex;
+}
+
+.box-list{
+  color: #FF9900;
+  align-items:center;
+  display: flex;
+  margin-right: 24px;
+  cursor:pointer;
+  position: relative;
+  &__copy{
+    background: url("../../img/copy.svg") no-repeat;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+  }
+  &__qr{
+    background: url("../../img/qr-code.svg") no-repeat;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.tooltip-copy{
+  display:none;
+  visibility: hidden;
+  opacity:0;
+  &.active{
+    display: flex;
+    visibility: visible;
+    align-items: center;
+    opacity: 1;
+    position: absolute;
+    left: -4px;
+    top: -52px;
+    background: #2FC265;
+    height: 40px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    min-width: 224px;
+    z-index: 3;
+    &::after{
+      content: '';
+      position: absolute;
+      border: 10px solid transparent;
+      border-top: 10px solid #2FC265;
+      top: 40px;
+      left: 24px;
+    }
+  }
+  &__ico{
+    background: url("../../img/check.svg") no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+  }
+}

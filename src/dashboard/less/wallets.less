@@ -1,0 +1,174 @@
+.dashboard-wallets{
+  background: @bg-form;
+  box-shadow: 0px 2px 0px #0A1A26;
+  width: 316px;
+  display: flex;
+  padding-bottom:58px ;
+  flex-direction: column;
+  @media @adaptive{
+    padding-bottom: 0px;
+  }
+  &__box{
+    margin-top: 49px;
+    transition: 0.5s all;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 4px;
+      background: #0C202E;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #0C202E;
+      border-radius: 100px;
+
+    }
+    &:hover{
+      overflow: auto;
+      &::-webkit-scrollbar {
+        width: 4px;
+        background: #0C202E;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #263845;
+        border-radius: 100px;
+      }
+    }
+    @media @adaptive{
+      &::-webkit-scrollbar {
+        width: 4px;
+        background: #D3DBE0;
+        height:8px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #263845;
+        border-radius: 100px;
+      }
+    }
+  }
+  &__header{
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.wallets-header{
+  height: 48px;
+  padding: 24px 28px 8px 28px;
+  display: flex;
+  font-size: 16px;
+  box-shadow: 0px 2px 0px #0A1A26;
+  &__add{
+    margin-left: auto;
+    color: #FF9900;
+    cursor: pointer;
+  }
+  &__name{
+    color: #79838A;
+  }
+}
+
+.wallet-box{
+  padding: 0px 28px 50px 28px;
+  @media @adaptive{
+    padding: 10px 10px;
+    display:flex;
+  }
+  &__list{
+    margin-bottom: 24px;
+  }
+}
+
+.wallet-list{
+  padding: 16px 12px 8px 12px;
+  background:@bg-dropdown;
+  border-radius: 6px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  @media @adaptive{
+    margin-bottom: 0px;
+    margin-right: 24px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 260px;
+  }
+  &__bottom{
+    margin-top: auto;
+  }
+}
+
+.crypto-info{
+  display: flex;
+  &__img{
+    margin-right: 8px;
+  }
+}
+
+.all-info{
+  display: flex;
+  width: 100%;
+  &__right{
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+.left-info{
+  &__name{
+    font-size: 16px;
+    max-width: 93px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__abbreviated{
+    color: #79838A;
+    margin-top: 4px;
+  }
+}
+
+.right-info{
+  &__count{
+    font-size: 16px;
+  }
+  &__cost{
+    color: #79838A;
+    margin-top: 4px;
+  }
+}
+
+.bottom-info{
+  display: flex;
+  align-items: flex-end;
+  &__cost{
+    max-width: 84px;
+    min-width: 84px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__icon{
+    margin-left: auto;
+    background: url(../../img/information.svg) no-repeat;
+    background-position: 0px 3px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  &__quotation{
+    margin-left: 8px;
+  }
+}
+
+.quotation-info{
+  display: flex;
+  align-items: flex-end;
+  &.quotation-info--fall{
+    color:#D1193E;
+    .quotation-info__icon{
+      background:url(../../img/caret-fall.svg) no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+}

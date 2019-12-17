@@ -1,0 +1,62 @@
+@import "header";
+@import "balance";
+@import "transactions";
+@import "wallets";
+@import "../../less/variables";
+
+
+body{
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+    height:4px;
+    background: #0C202E;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #263845;
+    border-radius: 100px;
+  }
+}
+.dashboard-page{
+  height: auto;
+  min-height: 100vh;
+  background: @bg-login;
+  display:flex;
+  flex-direction: column;
+
+  &__header{
+    background: @bg-dropdown;
+    min-height: 56px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    z-index: 99;
+  }
+  &__content{
+    margin-top: 56px;
+  }
+}
+.content-dashboard{
+  display:flex;
+  flex-wrap: wrap;
+  &__wallets{
+    position: fixed;
+    left:0px;
+    height: 100%;
+    @media @adaptive{
+      height: 226px;
+      width: 100%;
+      position: inherit;
+    }
+  }
+  &__main{
+    padding:24px 46px 24px 360px;
+    width: 100%;
+    @media @adaptive{
+      margin: 24px 3% 24px 3%;
+      padding: 0px;
+      width: 94%;
+    }
+  }
+}

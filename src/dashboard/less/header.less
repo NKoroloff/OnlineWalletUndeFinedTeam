@@ -1,0 +1,122 @@
+.dashboard-header{
+  display:flex;
+  padding: 0px 46px 0px 28px;
+  align-items: center;
+  @media @adaptive{
+    flex-wrap: wrap;
+    padding: 0px 10px 0px 10px;
+  }
+  &__logo{
+    @media @adaptive{
+      width:40px;
+      overflow: hidden;
+    }
+  }
+  &__swap{
+    margin-left: auto;
+    margin-right: 36px;
+    @media @adaptive{
+      margin-right: 18px;
+    }
+  }
+}
+
+.swap{
+  background: @bg-input;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 0px 22px;
+  cursor: pointer;
+  border-radius: 4px;
+  @media @adaptive{
+
+  }
+  &__ico{
+    width: 20px;
+    height: 20px;
+    background: url(../../img/swap.svg) no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+  }
+}
+.account-settings{
+  display:flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  @media @adaptive{
+
+    //margin-left: auto;
+  }
+  &__dropdown{
+    background:url("../../img/arrow-open.svg") no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+    cursor:pointer;
+    transition: all 0.4s;
+    &.active{
+      transform: rotate(180deg);
+    }
+  }
+  &__name{
+    margin-left: 8px;
+  }
+  &__open{
+    position: absolute;
+    top:-220px;
+    right:0px;
+    background: #263845;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all;
+
+    &.active{
+      top: 49px;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.settings-dropdown{
+  opacity: 0;
+  visibility: hidden;
+  &.active{
+    display:flex;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s all;
+  }
+  &__list{
+    padding:16px 0px 16px 12px;
+    min-width: 116px;
+  }
+}
+
+.list-dropdown{
+  display:flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s all;
+  &:hover{
+    background:#142836;;
+  }
+  &__settings{
+      background:url("../../img/settings.svg") no-repeat;
+      width: 24px;
+      height: 24px;
+  }
+  &__logout{
+    background:url("../../img/logout.svg") no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+  &__txt{
+    margin-left: 8px;
+  }
+}

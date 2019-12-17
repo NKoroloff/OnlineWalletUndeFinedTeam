@@ -1,0 +1,151 @@
+.transactions-box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &.transactions-box--empty{
+    .table-box{
+      flex-direction: column;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__head{
+    margin-bottom: 8px;
+    color:@color-dropdown;
+    font-size: 16px;
+  }
+}
+
+.table-box{
+  background: @bg-dropdown;
+  border-radius: 3px;
+  @media @adaptive{
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 4px;
+      height:4px;
+      background: #0C202E;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #263845;
+      border-radius: 100px;
+    }
+  }
+
+  &__ico{
+    background: url(../../img/transaction.svg) no-repeat;
+    width: 60px;
+    height: 60px;
+  }
+  &__info{
+    margin: 15px 0px 13px 0px;
+    text-align: center;
+  }
+  &__description{
+    color:@color-dropdown;
+    width: 272px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+.transactions-list{
+  @media @adaptive{
+    width:960px;
+  }
+  text-align: left;
+  margin: 0px;
+  &__info:first-child{
+    color: #79838A;
+    font-size: 13px;
+    border-bottom:1px solid rgba(196, 196, 196, 0.1);
+    margin:0px 0px;
+    padding: 0px 20px;
+    height:36px;
+  }
+  &__info{
+    border-bottom:1px solid rgba(196, 196, 196, 0.1);
+    margin:0px 20px;
+    padding:0px;
+  }
+  &__info:last-child{
+    border-bottom:none;
+  }
+}
+.list-info{
+  display: flex;
+  text-transform: capitalize;
+  height:47px;
+  align-items: center;
+  &__date{
+    width:192px;
+    width:20%;
+  }
+  &__type{
+    width:156px;
+    width:16.25%;
+  }
+  &__amount{
+    width:252px;
+    width:26.25%;
+  }
+  &__details{
+    width:192px;
+    width:20%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 60px;
+  }
+  &__status{
+    text-align: right;
+    margin-left: auto;
+    &--completed{
+      color:#2FC265;
+    }
+    &--canceled{
+      color:#D1193E;
+    }
+  }
+}
+
+.info-amount{
+  display: flex;
+  &__price{
+    color: #79838A;
+    margin-left: 8px;
+    font-size: 13px;
+  }
+}
+
+.info-type{
+  display: flex;
+  align-items: center;
+  &__icon{
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    &--swap{
+      background:url(../../img/arrow-swap.svg) no-repeat;
+    }
+    &--received{
+      background:url(../../img/arrow-received.svg) no-repeat;
+    }
+    &--send{
+      background:url(../../img/arrow-send.svg) no-repeat;
+    }
+  }
+
+}
+
+.transactions-block{
+  display: flex;
+  align-items: center;
+  &__calendar{
+    background:url("../../img/calendar.svg");
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+}

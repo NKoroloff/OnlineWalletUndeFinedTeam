@@ -1,0 +1,35 @@
+.mobile-stub{
+  display: none;
+
+  @media @adaptive{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    padding: 5% 5%;
+    background: rgba(20, 40, 54, 0.9);
+    z-index: 9999;
+    color: #fff;
+    flex-wrap: wrap;
+    line-height: 20px;
+    &.hidden{
+      display:none;
+    }
+    &__close{
+      font-weight: bold;
+      margin-top: 20px;
+      color: #f77518;
+      font-size:16px;
+    }
+  }
+  &__info{
+    width:100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__href{
+    width:50%;
+    color: #fff;
+  }
+
+}
